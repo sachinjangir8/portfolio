@@ -102,3 +102,40 @@
   border: 1px solid var(--accent);
   margin-left: 0.5rem;
 }
+
+/* Mobile bottom navigation */
+.mobile-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--panel);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: none;
+}
+.mobile-nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.mobile-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 0.2rem;
+  text-decoration: none;
+  color: var(--text);
+  opacity: 0.9;
+}
+.mobile-link .icon { font-size: 1.2rem; line-height: 1; }
+.mobile-link .label { font-size: 0.75rem; opacity: 0.8; margin-top: 0.15rem; }
+.mobile-link.active { color: var(--accent); opacity: 1; }
+
+@media (max-width: 768px) {
+  /* Hide desktop nav links on mobile; bottom MobileNav will be used */
+  .links { display: none; }
+  .mobile-nav { display: block; padding-bottom: max(0env(safe-area-inset-bottom), 0px); }
+  .content { padding-bottom: 4.25rem; }
+}
