@@ -1,3 +1,5 @@
+import { Typewriter } from '../components/animations';
+
 export default function Resume() {
   return (
     <section className="page">
@@ -6,12 +8,13 @@ export default function Resume() {
         <div>
           <h1>Sachin</h1>
           <p className="lead">
-            Data Scientist focused on turning data into measurable business
-            impact. I design and ship end-to-end analytics and ML solutions
-            across the full lifecycle—from data pipelines and feature
-            engineering to model deployment and monitoring. I completed a BCA at
-            Maharaja Ganga Singh University and I'm currently pursuing an MCA in
-            Data Science at Lovely Professional University, Punjab.
+            <Typewriter
+              text={
+                "Data Scientist focused on turning data into measurable business impact. I design and ship end-to-end analytics and ML solutions across the full lifecycle—from data pipelines and feature engineering to model deployment and monitoring. I completed a BCA at Maharaja Ganga Singh University and I'm currently pursuing an MCA in Data Science at Lovely Professional University, Punjab."
+              }
+              speed={18}
+              delay={0.2}
+            />
           </p>
           <p className="muted">Rajasthan, India</p>
           <p className="muted">Python • SQL • ML • MLOps • Visualization</p>

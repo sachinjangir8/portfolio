@@ -1,4 +1,4 @@
-import posts from '../shared/posts'
+import posts from "../shared/posts";
 
 export default function Blog() {
   return (
@@ -14,7 +14,5 @@ export default function Blog() {
         ))}
       </ul>
     </section>
-  )
+  );
 }
-
-

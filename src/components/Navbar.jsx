@@ -1,37 +1,54 @@
-import { NavLink } from 'react-router-dom'
-import { useThemeStore } from '../store/theme'
+import { NavLink } from "react-router-dom";
+import { useThemeStore } from "../store/theme";
+import { HoverScale } from "./animations";
 
 export default function Navbar() {
-  const theme = useThemeStore((s) => s.theme)
-  const toggleTheme = useThemeStore((s) => s.toggleTheme)
+  const theme = useThemeStore((s) => s.theme);
+  const toggleTheme = useThemeStore((s) => s.toggleTheme);
 
   return (
     <header className="navbar">
       <nav className="nav-inner">
-        <div className="brand">Data Scientist Portfolio</div>
+        <div className="brand">Sachin Jangir</div>
         <ul className="links">
           <li>
-            <NavLink to="/" end>Home</NavLink>
+            <HoverScale>
+              <NavLink to="/" end>
+                Home
+              </NavLink>
+            </HoverScale>
           </li>
           <li>
-            <NavLink to="/resume">My Resume</NavLink>
+            <HoverScale>
+              <NavLink to="/resume">My Resume</NavLink>
+            </HoverScale>
           </li>
           <li>
-            <NavLink to="/projects">Projects</NavLink>
+            <HoverScale>
+              <NavLink to="/projects">Projects</NavLink>
+            </HoverScale>
           </li>
           <li>
-            <NavLink to="/blog">Blog</NavLink>
+            <HoverScale>
+              <NavLink to="/blog">Blog</NavLink>
+            </HoverScale>
           </li>
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <HoverScale>
+              <NavLink to="/contact">Contact</NavLink>
+            </HoverScale>
           </li>
         </ul>
-        <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
-          {theme === 'dark' ? '🌙' : '☀️'}
-        </button>
+        <HoverScale>
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+          >
+            {theme === "dark" ? "🌙" : "☀️"}
+          </button>
+        </HoverScale>
       </nav>
     </header>
-  )
+  );
 }
-
-

@@ -1,4 +1,4 @@
-import projects from '../shared/projects'
+import projects from "../shared/projects";
 
 export default function Projects() {
   return (
@@ -10,12 +10,16 @@ export default function Projects() {
             <h3>{p.title}</h3>
             <p>{p.description}</p>
             {p.link && (
-              <a href={p.link} target="_blank" rel="noreferrer">View</a>
+              <a href={p.link} target="_blank" rel="noreferrer">
+                View
+              </a>
             )}
             {p.tags?.length ? (
               <div className="tags">
                 {p.tags.map((t) => (
-                  <span key={t} className="tag">{t}</span>
+                  <span key={t} className="tag">
+                    {t}
+                  </span>
                 ))}
               </div>
             ) : null}
@@ -23,7 +27,5 @@ export default function Projects() {
         ))}
       </div>
     </section>
-  )
+  );
 }
-
-

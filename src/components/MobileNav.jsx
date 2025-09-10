@@ -1,6 +1,14 @@
 import { NavLink } from "react-router-dom";
 
 export default function MobileNav() {
+  const navItems = [
+    { to: "/", label: "Home", icon: "🏠" },
+    { to: "/projects", label: "Projects", icon: "💼" },
+    { to: "/blog", label: "Blog", icon: "📰" },
+    { to: "/resume", label: "Resume", icon: "📄" },
+    { to: "/contact", label: "Contact", icon: "✉️" },
+  ];
+
   return (
     <nav
       className="mobile-nav"
@@ -8,67 +16,22 @@ export default function MobileNav() {
       aria-label="Mobile quick navigation"
     >
       <div className="mobile-nav-inner">
-        <NavLink
-          to="/"
-          end
-          className={({ isActive }) =>
-            `mobile-link${isActive ? " active" : ""}`
-          }
-          aria-label="Home"
-        >
-          <span className="icon" aria-hidden>
-            🏠
-          </span>
-          <span className="label">Home</span>
-        </NavLink>
-        <NavLink
-          to="/projects"
-          className={({ isActive }) =>
-            `mobile-link${isActive ? " active" : ""}`
-          }
-          aria-label="Projects"
-        >
-          <span className="icon" aria-hidden>
-            💼
-          </span>
-          <span className="label">Projects</span>
-        </NavLink>
-        <NavLink
-          to="/blog"
-          className={({ isActive }) =>
-            `mobile-link${isActive ? " active" : ""}`
-          }
-          aria-label="Blog"
-        >
-          <span className="icon" aria-hidden>
-            📰
-          </span>
-          <span className="label">Blog</span>
-        </NavLink>
-        <NavLink
-          to="/resume"
-          className={({ isActive }) =>
-            `mobile-link${isActive ? " active" : ""}`
-          }
-          aria-label="Resume"
-        >
-          <span className="icon" aria-hidden>
-            📄
-          </span>
-          <span className="label">Resume</span>
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            `mobile-link${isActive ? " active" : ""}`
-          }
-          aria-label="Contact"
-        >
-          <span className="icon" aria-hidden>
-            ✉️
-          </span>
-          <span className="label">Contact</span>
-        </NavLink>
+        {navItems.map((item) => (
+          <NavLink
+            key={item.to}
+            to={item.to}
+            end={item.to === "/"}
+            className={({ isActive }) =>
+              `mobile-link${isActive ? " active" : ""}`
+            }
+            aria-label={item.label}
+          >
+            <span className="icon" aria-hidden="true">
+              {item.icon}
+            </span>
+            <span className="label">{item.label}</span>
+          </NavLink>
+        ))}
       </div>
     </nav>
   );
