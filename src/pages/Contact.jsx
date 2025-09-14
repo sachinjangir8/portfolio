@@ -5,12 +5,12 @@ export default function Contact() {
       <p>Feel free to reach out via email or LinkedIn.</p>
       <ul>
         <li>
-          Email: <a href="mailto:you@example.com">you@example.com</a>
+          Email: <a href="mailto:you@example.com">sachinjangir1319@gmail.com</a>
         </li>
         <li>
           LinkedIn:{" "}
           <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
-            LinkedIn Profile
+            sachin jangir
           </a>
         </li>
       </ul>

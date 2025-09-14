@@ -4,7 +4,7 @@ export default function Resume() {
   return (
     <section className="page">
       <div className="resume-hero">
-        <img src="/profile.jpg" alt="Sachin" className="avatar" />
+        <img src="/pro.jpeg" alt="Sachin" className="avatar" />
         <div>
           <h1>Sachin</h1>
           <p className="lead">
@@ -35,13 +35,13 @@ export default function Resume() {
       </div>
 
       <ul className="resume">
-        <li>
+        {/* <li>
           <strong>Experience</strong>
           <ul>
             <li>Data Scientist at Company ABC — 2022–Present</li>
             <li>Data Analyst at Company XYZ — 2020–2022</li>
           </ul>
-        </li>
+        </li> */}
         <li>
           <strong>Education</strong>
           <ul>
@@ -55,7 +55,7 @@ export default function Resume() {
         <li>
           <strong>Skills</strong>
           <ul>
-            <li>Python, SQL, R, Scikit-Learn, TensorFlow, PyTorch, Airflow</li>
+            <li>Python, SQL, R, Scikit-Learn, TensorFlow, matplotlib ,PyTorch, Airflow , Power BI , Tableau </li>
           </ul>
         </li>
         <li>

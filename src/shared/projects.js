@@ -1,7 +1,7 @@
 const projects = [
   {
     id: 'proj-1',
-    title: 'ML Pipeline for Churn Prediction',
+    title: 'ML students score Prediction',
     description: 'End-to-end pipeline with feature engineering, model training, and deployment.',
     link: '#',
     tags: ['Python', 'Scikit-Learn', 'Airflow'],
