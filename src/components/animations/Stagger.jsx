@@ -40,6 +40,9 @@ const Stagger = ({
     }
   };
 
+  // Ensure children is an array
+  const childrenArray = Array.isArray(children) ? children : [children];
+
   return (
     <motion.div
       ref={ref}
@@ -49,7 +52,7 @@ const Stagger = ({
       className={className}
       {...props}
     >
-      {children.map((child, index) => (
+      {childrenArray.map((child, index) => (
         <motion.div key={index} variants={item}>
           {child}
         </motion.div>
