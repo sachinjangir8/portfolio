@@ -9,19 +9,19 @@ export default function Footer() {
   const socialLinks = [
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/sachin-jangir",
+      url: "https://www.linkedin.com/in/sachin-jangir-1a8b94299/",
       icon: <IoLogoLinkedin />,
       color: "#0077b5",
     },
     {
       name: "GitHub",
-      url: "https://github.com/sachin-jangir",
+      url: "https://github.com/sachinjangir8",
       icon: <FaGithub />,
       color: "#333",
     },
     {
       name: "Instagram",
-      url: "https://instagram.com/sachin_jangir",
+      url: "https://www.instagram.com/sachin_jangir8/",
       icon: <FaInstagram />,
       color: "#e4405f",
     },
