@@ -17,7 +17,7 @@ export default function Contact() {
     {
       type: "LinkedIn",
       value: "sachin jangir",
-      link: "https://www.linkedin.com/",
+      link: "https://www.linkedin.com/in/sachin-jangir-1a8b94299/",
       icon: "💼"
     }
   ];
