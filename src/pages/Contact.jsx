@@ -61,7 +61,7 @@ export default function Contact() {
         </div>
 
         <FadeIn delay={0.6} direction="up">
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 text-center">
+          <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 text-center ">
             <h2 className="text-2xl font-bold mb-4 text-gray-800">Let's Connect!</h2>
             <p className="text-gray-600 mb-6">
               I'm always excited to discuss data science projects, machine learning opportunities, 

@@ -23,9 +23,9 @@ const projects = [
   {
     id: 'proj-4',
     title: 'full stack chat application',
-    description: 'A real-time chat application using React for the frontend and Node.js with Socket.io for the backend.',
+    description: 'A real-time chat application using React and Node.js with Socket.io for the backend.',
     link: 'https://full-stack-chat-app-8gms.onrender.com',
-    tags: ['React', 'Node.js', 'Socket.io', 'Express', 'MongoDB', 'REST API', 'WebSockets',],
+    tags: ['React', 'Node.js', 'Socket.io'],
   },
 ]
 

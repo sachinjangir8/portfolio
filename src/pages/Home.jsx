@@ -78,7 +78,7 @@ export default function Home() {
       {/* About Section */}
       <div className="max-w-4xl mx-auto mb-16">
         <ParallaxScroll speed={0.3}>
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 shadow-lg">
+          <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 shadow-lg ">
             <FadeIn delay={0.6} direction="left">
               <h2 className="text-3xl font-bold mb-6 text-gray-800">
                 About My Journey
@@ -86,7 +86,7 @@ export default function Home() {
             </FadeIn>
 
             <SlideIn delay={0.7} direction="right" distance={100}>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              <p className="text-lg text-gray-600 leading-relaxed mb-6 bg-gray-400 rounded-lg p-4">
                 With my academic background in computer applications and growing
                 expertise in data science, I am developing skills in areas such
                 as machine learning, data analysis, and statistical modeling. I
@@ -96,7 +96,7 @@ export default function Home() {
             </SlideIn>
 
             <FadeIn delay={0.8} direction="up">
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed bg-gray-400 rounded-lg p-4">
                 I am aiming to build a career in data-driven decision making and
                 artificial intelligence, where I can contribute to solving
                 complex problems and making a meaningful impact through
