@@ -55,7 +55,7 @@ export default function Resume() {
         <li>
           <strong>Skills</strong>
           <ul>
-            <li>Python, SQL, R, Scikit-Learn, TensorFlow, matplotlib ,PyTorch, Airflow , Power BI , Tableau </li>
+            <li>Python,c++,javascript, reactjs,nextjs, nodejs, mongodb,superbase,restapi,firebase,SQL, R, Scikit-Learn, TensorFlow, matplotlib ,PyTorch, Airflow , Power BI , Tableau </li>
           </ul>
         </li>
         <li>
