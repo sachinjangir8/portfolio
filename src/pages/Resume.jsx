@@ -61,8 +61,8 @@ export default function Resume() {
         <li>
           <strong>Certifications</strong>
           <ul>
-            <li>Google Data Analytics (example)</li>
-            <li>AWS Certified Cloud Practitioner (example)</li>
+            <li>Google Data Analytics</li>
+            <li>AWS Certified Cloud Practitioner </li>
           </ul>
         </li>
       </ul>
